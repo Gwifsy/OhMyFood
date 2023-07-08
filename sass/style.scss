@@ -1,0 +1,50 @@
+// VARIABLES 
+// Colors
+$--light-blue: #89C8FA;
+$--dark-blue: #003A68;
+
+// Colors title
+$--title-menu-font: #000;
+$--title-belleville-font: #353535;
+$--text-title-font: #101010;
+
+// BACKGROUND COLOR
+$--background-header-menu: #F6F6F6;
+$--background-paris-belleville: #EAEAEA;
+$--background-footer: #353535;
+
+// icon partie fonctionnement
+$--ellispe-purple: #9356DC;
+
+// Badge border and selecteur button
+$--green-font: #008766;
+$--bdg-border-Green: #99E2D0;
+
+// Button and shadow
+$--btn-gradiant: linear-gradient(175deg, #9356DC 0%, #FF79DA 100%);
+$--box-shadow-gradiant: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+
+// Text configuration
+$--body-font: 'Roboto', sans-serif;
+
+$--title-font-weight: 700;
+$--text-font-weight: 500;
+$--paragraphe-font-weight: 300;
+
+// Mobil font-size
+$--text-header-main-footer-btn-font-size: 1rem;
+$--text-reservez-font-size: 2.5rem;
+$--text-paragraphe-header-and-title-menu-font-size: 1.125rem;
+$--title-font-size: 1.5rem;
+$--paragraphe-menu-font-size: 1.063rem;
+$--badge-font-size: 0.875rem;
+
+// Palette menu desktop font-size
+$--title-palette-font-size: 1.75rem;
+$--paragraphe-palette-font-size: 0.94rem;
+
+// MIXINS
+
+body {
+    background-color: #101010;
+}
