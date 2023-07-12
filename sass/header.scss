@@ -1,0 +1,16 @@
+@import"style.scss";
+
+.logo {
+    display: flex;
+    justify-content: center;
+    background: #fff;
+    margin: 0.813rem 0rem;
+
+    .logo__back__none {
+        display: none;
+    }
+
+    .logo__title {
+        width: 10.125rem;
+    }
+}

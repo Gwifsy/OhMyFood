@@ -44,3 +44,44 @@ $--title-palette-font-size: 1.75rem;
 $--paragraphe-palette-font-size: 0.94rem;
 
 // MIXINS
+
+
+* {
+    margin: 0;
+    border: 1px solid blueviolet;
+}
+
+body {
+    font-family: $--body-font;
+}
+
+
+
+
+/* COEUR CSS */
+/* <input type="checkbox" id="likeCheckbox" class="like-checkbox">
+<label for="likeCheckbox" class="button-like"></label>
+
+.like-checkbox {
+    display: none;
+}
+
+.button-like {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: white;
+    border: none;
+    border-radius: 4px;
+    color: #333;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    background-image: url('/images/icon/like.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.like-checkbox:checked+.button-like {
+    background-image: url('/images/icon/Like-second.svg');
+} */

@@ -1,3 +1,97 @@
+* {
+  margin: 0;
+  border: 1px solid blueviolet;
+}
 
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+/* COEUR CSS */
+/* <input type="checkbox" id="likeCheckbox" class="like-checkbox">
+<label for="likeCheckbox" class="button-like"></label>
+
+.like-checkbox {
+    display: none;
+}
+
+.button-like {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: white;
+    border: none;
+    border-radius: 4px;
+    color: #333;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    background-image: url('/images/icon/like.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.like-checkbox:checked+.button-like {
+    background-image: url('/images/icon/Like-second.svg');
+} */
+.paris__belleville {
+  display: flex;
+  justify-content: center;
+  background: #EAEAEA;
+  padding: 0.813rem;
+  gap: 1.063rem;
+}
+.paris__belleville .paris__belleville__pin {
+  width: 0.75rem;
+}
+.paris__belleville .paris__belleville__title {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.reservez {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.reservez__text {
+  font-size: 1.5rem;
+  font-weight: 700;
+  width: 17.188rem;
+  height: 4.25rem;
+  margin-top: 2.438rem;
+  margin-right: 0.5rem;
+}
+
+.reservez__paragraphe {
+  display: flex;
+  font-size: 1.125rem;
+  font-weight: 300;
+  width: 19.688rem;
+  margin-left: 1rem;
+}
+
+.reservez__button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: linear-gradient(175deg, #9356DC 0%, #FF79DA 100%);
+  width: 13.625rem;
+  height: 3.125rem;
+  border-radius: 25px;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  text-decoration: none;
+  margin-left: 0.438rem;
+  margin-top: 1.688rem;
+  margin-bottom: 3.563rem;
+}
+
+.reservez__button__title {
+  font-size: 1rem;
+  color: #FFFFFF;
+  font-weight: 500;
+}
 
 /*# sourceMappingURL=main.css.map */
