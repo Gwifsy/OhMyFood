@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="/style/header.css">
     <link rel="stylesheet" href="/style/main.css">
     <link rel="stylesheet" href="/style/menu_restaurants.css">
+    <link rel="stylesheet" href="/style/fonctionnement.css">
+    <link rel="stylesheet" href="/style/menu_restaurants.css">
 </head>
 
 <body>
@@ -45,125 +47,119 @@
                 <div class="fonctionnement__container__article">
                     <article class="fonctionnement__article">
                         <div class="fonctionnement__ellipse">1</div>
-                        <img class="fonctionnement__mobile" src="/images/icon-fonctionnement/mobile.svg" alt="">
+                        <img class="fonctionnement__image image__mobil" src="/images/icon-fonctionnement/mobile.svg"
+                            alt="">
                         <h3 class="fonctionnement__text">Choisissez un restaurant</h3>
                     </article>
 
                     <article class="fonctionnement__article">
                         <div class="fonctionnement__ellipse">2</div>
-                        <img class="fonctionnement__mobile" src="/images/icon-fonctionnement/list-ul.svg" alt="">
+                        <img class="fonctionnement__image image__list" src="/images/icon-fonctionnement/list-ul.svg"
+                            alt="">
                         <h3 class="fonctionnement__text">Composez votre menu</h3>
                     </article>
 
                     <article class="fonctionnement__article">
                         <div class="fonctionnement__ellipse">3</div>
-                        <img class="fonctionnement__mobile" src="/images/icon-fonctionnement/store.png" alt="">
+                        <img class="fonctionnement__image image__store" src="/images/icon-fonctionnement/store.png"
+                            alt="">
                         <h3 class="fonctionnement__text">Dégustez au restaurant</h3>
                     </article>
                 </div>
             </div>
         </main>
+
+        <!-- Card Restaurants -->
         <section class="restaurants">
             <h2 class="restaurants__title">Restaurants</h2>
 
             <!-- Premier block -->
-            <div class="restaurants__container__arcticle">
+            <div class="restaurants__container__article1">
                 <article class="restaurants__article">
                     <a href="#">
                         <div class="restaurants__image__badge">
                             <img class="restaurants__image" src="/images/restaurants/jay-wennington.jpg" alt="">
                             <div class="restaurants_badge">Nouveau</div>
                         </div>
-                        <div class="restaurants__content">
-                            <div class="restaurants__card__txt">
-                                <h3 class="restaurants__card__title">La palette du goût</h3>
-                                <p class="restaurants__card__paragraphe">Ménilmontant</p>
-                            </div>
+                        <div class="restaurants__card__txt">
+                            <h3 class="restaurants__card__title">La palette du goût</h3>
+                            <input type="checkbox" id="likeCheckbox1" class="like-checkbox">
+                            <label for="likeCheckbox1" class="button-like"></label>
+                        </div>
+                        <p class="restaurants__card__paragraphe">Ménilmontant</p>
                     </a>
-                    <button class="restaurants__button" type="button">
-                        <img class="restaurants__button__like" src="/images/icon/like.svg" alt="">
-                    </button>
-            </div>
-            </article>
+                </article>
 
-            <article class="restaurants__article">
-                <a href="#">
-                    <div class="restaurants__image__badge">
-                        <img class="restaurants__image" src="/images/restaurants/stil.jpg" alt="">
-                        <div class="restaurants_badge">Nouveau</div>
-                    </div>
-                    <div class="restaurants__content">
+                <article class="restaurants__article">
+                    <a href="#">
+                        <div class="restaurants__image__badge">
+                            <img class="restaurants__image" src="/images/restaurants/stil.jpg" alt="">
+                            <div class="restaurants_badge">Nouveau</div>
+                        </div>
                         <div class="restaurants__card__txt">
                             <h3 class="restaurants__card__title">La note enchantée</h3>
-                            <p class="restaurants__card__paragraphe">Charonne</p>
+                            <input type="checkbox" id="likeCheckbox2" class="like-checkbox">
+                            <label for="likeCheckbox2" class="button-like"></label>
                         </div>
-                </a>
-                <button class="restaurants__button" type="button">
-                    <img class="button__like" src="/images/icon/like.svg" alt="">
-                </button>
-    </div>
-    </article>
-    </div>
+                        <p class="restaurants__card__paragraphe">Charonne</p>
+                    </a>
+                </article>
+            </div>
 
-    <!-- Deuxième block -->
-    <div class="restaurants__container__arcticle">
-        <article class="restaurants__article">
-            <a href="#">
-                <div class="restaurants__image__badge">
-                    <img class="restaurants__image" src="/images/restaurants/toa-heftiba.jpg" alt="">
-                    <div class="restaurants_badge">Nouveau</div>
-                </div>
-                <div class="restaurants__content">
-                    <div class="restaurants__card__txt">
-                        <h3 class="restaurants__card__title">À la française</h3>
+            <!-- Deuxième block -->
+            <div class="restaurants__container__article2">
+                <article class="restaurants__article">
+                    <a href="#">
+                        <div class="restaurants__image__badge">
+                            <img class="restaurants__image" src="/images/restaurants/toa-heftiba.jpg" alt="">
+                            <div class="restaurants_badge">Nouveau</div>
+                        </div>
+                        <div class="restaurants__card__txt">
+                            <h3 class="restaurants__card__title">À la française</h3>
+                            <input type="checkbox" id="likeCheckbox3" class="like-checkbox">
+                            <label for="likeCheckbox3" class="button-like"></label>
+                        </div>
                         <p class="restaurants__card__paragraphe">Cité Rouge
                         </p>
-                    </div>
-            </a>
-            <button class="restaurants__button" type="button">
-                <img class="restaurants__button__like" src="/images/icon/like.svg" alt="">
-            </button>
-    </div>
-    </article>
+                    </a>
+                </article>
 
-    <article class="restaurants__article">
-        <a href="#">
-            <div class="restaurants__image__badge">
-                <img class="restaurants__image" src="/images/restaurants/louis-hansel-shotsofloui.jpg" alt="">
-                <div class="restaurants_badge">Nouveau</div>
+                <article class="restaurants__article">
+                    <a href="#">
+                        <div class="restaurants__image__badge">
+                            <img class="restaurants__image" src="/images/restaurants/louis-hansel-shotsofloui.jpg"
+                                alt="">
+                            <div class="restaurants_badge">Nouveau</div>
+                        </div>
+                        <div class="restaurants__card__txt">
+                            <h3 class="restaurants__card__title">Le délice des sens</h3>
+                            <input type="checkbox" id="likeCheckbox4" class="like-checkbox">
+                            <label for="likeCheckbox4" class="button-like"></label>
+                        </div>
+                        <p class="restaurants__card__paragraphe">Folie-Méricourt</p>
+                    </a>
+                </article>
             </div>
-            <div class="restaurants__content">
-                <div class="restaurants__card__txt">
-                    <h3 class="restaurants__card__title">Le délice des sens</h3>
-                    <p class="restaurants__card__paragraphe">Folie-Méricourt</p>
+        </section>
+
+        <!-- Parti footer -->
+        <footer class="footer">
+            <div class="footer__content">
+                <div class="proposer">
+                    <img class="proposer__icon__fourchette" src="/images/icon-footer/fourchette.svg" alt="">
+                    <h3 class="proposer__title">Proposer un restaurant</h3>
                 </div>
-        </a>
-        <button class="restaurants__button" type="button">
-            <img class="restaurants__button__like" src="/images/icon/like.svg" alt="">
-        </button>
-        </div>
-    </article>
-    </div>
-    </section>
-
-    <!-- Parti footer -->
-    <footer class="footer">
-        <div class="footer__content">
-            <div class="proposer">
-                <img class="proposer__icon__fourchette" src="/images/icon-footer/fourchette.svg" alt="">
-                <h3 class="proposer__title">Proposer un restaurant</h3>
+                <div class="devenir">
+                    <img class="devenir__icon__poigne" src="/images/icon-footer/poigne.svg" alt="">
+                    <h3 class="devenir__title">Devenir partenaire</h3>
+                </div>
+                <h3 class="mention__title">Mentions légales</h3>
+                <h3 class="contact__title">Contact</h3>
             </div>
-            <div class="devenir">
-                <img class="devenir__icon__poigne" src="/images/icon-footer/poigne.svg" alt="">
-                <h3 class="devenir__title">Devenir partenaire</h3>
+            <div class="logo__footer">
+                <img class="logo__footer__title" src="/images/logo/ohmyfood.png" alt="">
             </div>
-            <h3 class="mention__title">Mentions légales</h3>
-            <h3 class="contact__title">Contact</h3>
-        </div>
-        <div class="logo__footer">
-            <img class="logo__footer__title" src="/images/logo/ohmyfood.png" alt="">
-        </div>
-    </footer>
+        </footer>
     </div>
 </body>
 

@@ -1,3 +1,69 @@
+@import "style.scss";
+
+.restaurants {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: $--background-header-menu;
+}
+
+.restaurants__title {
+    font-size: $--title-font-size;
+    font-weight: $--title-font-weight;
+    width: 90%;
+    margin-top: 54px;
+}
+
+.restaurants__container__article1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 90%;
+    margin-top: 1.625rem;
+}
+
+.restaurants__container__article2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 90%;
+}
+
+.restaurants__article {
+    background: #fff;
+    width: 100%;
+}
+
 .restaurants__image {
     width: 100%;
+    height: 231px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.like-checkbox {
+    display: none;
+}
+
+.button-like {
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    border: none;
+    cursor: pointer;
+    background-image: url('/images/icon/like.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.like-checkbox:checked+.button-like {
+    background-image: url('/images/icon/Like-second.svg');
+}
+
+.restaurants__card__txt {
+    display: flex;
 }

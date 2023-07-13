@@ -54,9 +54,9 @@ body {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  background: #F6F6F6;
 }
-
-.reservez__text {
+.reservez .reservez__text {
   font-size: 1.5rem;
   font-weight: 700;
   width: 17.188rem;
@@ -64,16 +64,14 @@ body {
   margin-top: 2.438rem;
   margin-right: 0.5rem;
 }
-
-.reservez__paragraphe {
+.reservez .reservez__paragraphe {
   display: flex;
   font-size: 1.125rem;
   font-weight: 300;
   width: 19.688rem;
   margin-left: 1rem;
 }
-
-.reservez__button {
+.reservez .reservez__button {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -87,8 +85,7 @@ body {
   margin-top: 1.688rem;
   margin-bottom: 3.563rem;
 }
-
-.reservez__button__title {
+.reservez .reservez__button .reservez__button__title {
   font-size: 1rem;
   color: #FFFFFF;
   font-weight: 500;
