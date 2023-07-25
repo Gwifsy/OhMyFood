@@ -16,7 +16,6 @@
     .fonctionnement__container__article {
         display: flex;
         flex-direction: column;
-        position: relative;
         gap: 1.563rem;
         margin-top: 1.625rem;
         margin-bottom: 4.25rem;
@@ -24,10 +23,11 @@
 
         .fonctionnement__article {
             display: flex;
+            position: relative;
             width: 100%;
             padding: 1.75rem 0;
             background: $--background-header-menu;
-            border-radius: 20px;
+            border-radius: 1.25rem;
             box-shadow: $--box-shadow-gradiant;
 
             .fonctionnement__ellipse {
@@ -71,6 +71,19 @@
                 margin-left: 1.688rem;
                 margin-top: 0.219rem;
             }
+        }
+    }
+
+    @media (min-width:1428px) {
+        .fonctionnement__title {
+            width: 80%;
+        }
+
+        .fonctionnement__container__article {
+            display: flex;
+            flex-direction: row;
+            width: 80%;
+            gap: 2.25rem;
         }
     }
 }

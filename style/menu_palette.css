@@ -1,3 +1,310 @@
+* {
+  margin: 0;
+}
 
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.paris__belleville {
+  display: flex;
+  justify-content: center;
+  background: #EAEAEA;
+  padding: 0.813rem;
+  gap: 1.063rem;
+}
+.paris__belleville .paris__belleville__pin {
+  width: 0.75rem;
+}
+.paris__belleville .paris__belleville__title {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.reservez {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: #F6F6F6;
+}
+.reservez .reservez__text {
+  font-size: 1.5rem;
+  font-weight: 700;
+  width: 17.188rem;
+  height: 4.25rem;
+  margin-top: 2.438rem;
+  margin-right: 0.5rem;
+}
+.reservez .reservez__paragraphe {
+  display: flex;
+  font-size: 1.125rem;
+  font-weight: 300;
+  width: 19.688rem;
+  margin-left: 1rem;
+}
+.reservez .reservez__button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: linear-gradient(175deg, #9356DC 0%, #FF79DA 100%);
+  width: 13.625rem;
+  height: 3.125rem;
+  border-radius: 25px;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  text-decoration: none;
+  margin-left: 0.438rem;
+  margin-top: 1.688rem;
+  margin-bottom: 3.563rem;
+  transition-duration: 1.2s;
+  opacity: 1;
+}
+.reservez .reservez__button .reservez__button__title {
+  font-size: 1rem;
+  color: #FFFFFF;
+  font-weight: 500;
+}
+.reservez .reservez__button:hover {
+  transition-duration: 1.2s;
+  opacity: 0.8;
+  box-shadow: 0rem 0.375rem 0.75rem 0rem rgba(0, 0, 0, 0.45);
+}
+@media (min-width: 1428px) {
+  .reservez .reservez__text {
+    height: 2.938rem;
+    width: 40.625rem;
+    font-size: 2.5rem;
+  }
+  .reservez .reservez__paragraphe {
+    justify-content: center;
+    align-items: center;
+    font-size: 1.125rem;
+    width: 32.875rem;
+    height: 2.938rem;
+    margin-top: 1.125rem;
+  }
+  .reservez .reservez__button {
+    margin-bottom: 1.875rem;
+  }
+}
+
+.palette__main {
+  display: flex;
+  height: 17.188rem;
+  position: relative;
+}
+.palette__main .palette__image {
+  width: 100%;
+}
+
+@media (min-width: 1428px) {
+  .palette__main {
+    height: 40rem;
+  }
+  .palette__image {
+    object-fit: cover;
+  }
+}
+.palette__menu {
+  display: flex;
+  flex-direction: column;
+  background: #F6F6F6;
+  border-radius: 2.5rem 2.5rem 0rem 0rem;
+  position: relative;
+  bottom: 3.188rem;
+  margin-bottom: -3.188rem;
+}
+.palette__menu .palette__title__btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.palette__menu .palette__title__btn .palette__title {
+  font-size: 1.75rem;
+  font-family: "Shrikhand", cursive;
+  margin-right: 1.625rem;
+}
+.palette__menu .palette__title__btn .palette__button {
+  display: flex;
+  align-items: center;
+  margin-right: 0.313rem;
+}
+.palette__menu .palette__title__btn .palette__button .like-checkbox {
+  display: none;
+}
+.palette__menu .palette__title__btn .palette__button .palette__button__like {
+  display: flex;
+  width: 1.375rem;
+  height: 1.375rem;
+  border: none;
+  cursor: pointer;
+  background-image: url("/images/icon/like.svg");
+  background-repeat: no-repeat;
+}
+.palette__menu .palette__title__btn .palette__button .like-checkbox:checked + .palette__button__like {
+  background-image: url("/images/icon/Like-second.svg");
+}
+.palette__menu .palette__menu__article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2.625rem;
+  gap: 0.75rem;
+  position: relative;
+}
+.palette__menu .palette__menu__article .palette__article__title {
+  font-size: 1rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  width: 90%;
+  position: relative;
+  margin-bottom: 0.625rem;
+}
+.palette__menu .palette__menu__article .palette__article__title::after {
+  content: "";
+  position: absolute;
+  top: 1.563rem;
+  bottom: 0;
+  left: 0;
+  width: 2.5rem;
+  height: 0.188rem;
+  background-color: #99E2D0;
+}
+.palette__menu .palette__menu__article .palette__menu__btn {
+  width: 90%;
+  height: 4.375rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: white;
+  border-radius: 0.94rem;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0.125rem 0.25rem 0.938rem #dedede;
+  transition: 600ms ease-in-out;
+}
+.palette__menu .palette__menu__article .palette__menu__btn .like-checkbox {
+  display: none;
+}
+.palette__menu .palette__menu__article .palette__menu__btn .like-checkbox:checked + .palette__menu__btn .palette__card__selecteur {
+  margin-right: 0em;
+}
+.palette__menu .palette__menu__article .palette__menu__btn .palette__menu__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex: 1;
+  padding: 0.938rem;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.palette__menu .palette__menu__article .palette__menu__btn .palette__menu__text .palette__menu__food {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 1.125rem;
+  font-weight: 500;
+  margin-bottom: 0.125rem;
+  margin-top: 0;
+}
+.palette__menu .palette__menu__article .palette__menu__btn .palette__menu__text .palette__menu__description {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 0.94rem;
+  font-weight: 300;
+  margin-bottom: 0;
+  margin-top: 0.125rem;
+}
+.palette__menu .palette__menu__article .palette__menu__btn .palette__menu__price {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  height: 90%;
+  padding-bottom: 1.063rem;
+  font-size: 0.94rem;
+  font-weight: 700;
+  margin: 0;
+}
+.palette__menu .palette__menu__article .palette__menu__btn .palette__card__selecteur {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  height: 100%;
+  background-color: #99e2d0;
+  color: white;
+  margin-left: 1em;
+  margin-right: -4em;
+  overflow: hidden;
+  transition-duration: 1500ms;
+}
+.palette__menu .palette__menu__article .palette__menu__btn .fa-check-circle:before,
+.palette__menu .palette__menu__article .palette__menu__btn .fa-circle-check:before {
+  content: "\f058";
+}
+
+.button__container {
+  display: flex;
+  justify-content: center;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+.button__container .button__like {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: linear-gradient(175deg, #9356DC 0%, #FF79DA 100%);
+  width: 11.625rem;
+  height: 3.125rem;
+  border-radius: 1.563rem;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  text-decoration: none;
+  transition-duration: 1.2s;
+  opacity: 1;
+}
+.button__container .button__like .button__title__like {
+  text-align: center;
+  font-size: 1rem;
+  color: #FFFFFF;
+  font-weight: 500;
+}
+.button__container .button__like:hover {
+  transition-duration: 1.2s;
+  opacity: 0.8;
+  box-shadow: 0rem 0.375rem 0.75rem 0rem rgba(0, 0, 0, 0.45);
+}
+
+@media (min-width: 1428px) {
+  .menu__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .menu__container .palette__menu {
+    bottom: 2.813rem;
+    width: 78%;
+    margin-bottom: -2.813rem;
+  }
+  .menu__container .palette__menu .palette__article__title {
+    width: 70%;
+  }
+  .menu__container .palette__menu .palette__menu__btn {
+    width: 70%;
+  }
+  .menu__container .palette__menu__btn:hover .palette__card__selecteur {
+    margin-right: 0em;
+  }
+}
 
 /*# sourceMappingURL=menu_palette.css.map */

@@ -5,65 +5,134 @@
     flex-direction: column;
     align-items: center;
     background: $--background-header-menu;
-}
+    height: 79.875rem;
 
-.restaurants__title {
-    font-size: $--title-font-size;
-    font-weight: $--title-font-weight;
-    width: 90%;
-    margin-top: 54px;
-}
+    .restaurants__title {
+        font-size: $--title-font-size;
+        font-weight: $--title-font-weight;
+        width: 90%;
+        margin-top: 3.375rem;
+        margin-bottom: 1.625rem;
+    }
 
-.restaurants__container__article1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    width: 90%;
-    margin-top: 1.625rem;
-}
+    .restaurants__container__article {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1.125rem;
+        width: 100%;
+        margin-bottom: 1.125rem;
 
-.restaurants__container__article2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    width: 90%;
-}
+        .a__text__decoration__none {
+            background: #fff;
+            border-radius: 0.938rem;
+            text-decoration: none;
+            width: 90%;
+            box-shadow: $--box-shadow-card ;
+            padding-bottom: 0.75rem;
+            position: relative;
 
-.restaurants__article {
-    background: #fff;
-    width: 100%;
-}
 
-.restaurants__image {
-    width: 100%;
-    height: 231px;
-    border-radius: 20px 20px 0px 0px;
-}
+            .restaurants__image__badge {
+                position: relative;
+                height: 10.875rem;
+                border-radius: 0.938rem;
 
-.like-checkbox {
-    display: none;
-}
+                .restaurants__image {
+                    width: 100%;
+                    height: 10.875rem;
+                    // background-position: 0% 144%;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    object-fit: cover;
+                    border-radius: 0.938rem 0.938rem 0px 0px;
+                    align-self: stretch;
+                }
 
-.button-like {
-    display: inline-block;
-    width: 22px;
-    height: 22px;
-    border: none;
-    cursor: pointer;
-    background-image: url('/images/icon/like.svg');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}
+                .restaurants_badge {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 5rem;
+                    height: 1.813rem;
+                    background: $--bdg-border-Green;
+                    font-size: $--badge-font-size;
+                    font-weight: $--text-font-weight;
+                    color: $--green-font;
+                    position: absolute;
+                    top: 0.813rem;
+                    right: 0.75rem;
+                }
+            }
 
-.like-checkbox:checked+.button-like {
-    background-image: url('/images/icon/Like-second.svg');
-}
+            .restaurants__card__title {
+                font-size: $--text-paragraphe-header-and-title-menu-font-size;
+                font-weight: $--title-font-weight;
+                color: #000;
+                margin-left: 0.813rem;
+                width: 15.438rem;
+                height: 1.25rem;
+                margin-bottom: 0.313rem;
+                margin-top: 1.125rem;
+            }
 
-.restaurants__card__txt {
-    display: flex;
+            .restaurants__card__paragraphe {
+                font-size: $--paragraphe-menu-font-size;
+                font-weight: $--paragraphe-font-weight;
+                margin-left: 0.813rem;
+                color: #000;
+                width: 14.313rem;
+                height: 1.5rem;
+            }
+
+            .restaurants__button {
+                display: flex;
+                align-items: center;
+                width: 1.375rem;
+                height: 1.375rem;
+                position: absolute;
+                right: 1.125rem;
+                bottom: 2.063rem;
+
+                .like-checkbox {
+                    display: none;
+                }
+
+                .button-like {
+                    display: flex;
+                    width: 1.375rem;
+                    height: 1.375rem;
+                    border: none;
+                    cursor: pointer;
+                    background-image: url('/images/icon/like.svg');
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                }
+
+                .like-checkbox:checked+.button-like {
+                    background-image: url('/images/icon/Like-second.svg');
+                }
+            }
+        }
+    }
+
+
+    @media (min-width:1428px) {
+        height: 43.188rem;
+
+        .restaurants__title {
+            width: 80%;
+            margin-top: 1.875rem;
+        }
+
+        .restaurants__container__article {
+            display: flex;
+            flex-direction: row;
+            width: 80%;
+            gap: 6.25rem;
+            margin-bottom: 3.125rem;
+        }
+    }
 }

@@ -56,11 +56,61 @@
         margin-left: 0.438rem;
         margin-top: 1.688rem;
         margin-bottom: 3.563rem;
+        transition-duration: 1.2s;
+        opacity: 1;
 
         .reservez__button__title {
             font-size: 1rem;
             color: #FFFFFF;
             font-weight: $--text-font-weight;
         }
+    }
+
+    .reservez__button:hover {
+        transition-duration: 1.2s;
+        opacity: 0.8;
+        box-shadow: 0rem 0.375rem 0.75rem 0rem rgba(0, 0, 0, 0.45);
+    }
+
+    @media (min-width:1428px) {
+        .reservez__text {
+            height: 2.938rem;
+            width: 40.625rem;
+            font-size: 2.5rem;
+        }
+
+        .reservez__paragraphe {
+            justify-content: center;
+            align-items: center;
+            font-size: $--text-paragraphe-header-and-title-menu-font-size;
+            width: 32.875rem;
+            height: 2.938rem;
+            margin-top: 1.125rem;
+        }
+
+        .reservez__button {
+            margin-bottom: 1.875rem;
+        }
+    }
+}
+
+// MENU PALETTE MAIN
+.palette__main {
+    display: flex;
+    height: 17.188rem;
+    position: relative;
+
+    .palette__image {
+        width: 100%;
+    }
+}
+
+@media (min-width:1428px) {
+    .palette__main {
+        height: 40rem;
+    }
+
+    .palette__image {
+        object-fit: cover;
     }
 }

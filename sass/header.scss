@@ -3,14 +3,34 @@
 .logo {
     display: flex;
     justify-content: center;
+    align-items: center;
     background: #fff;
-    margin: 0.813rem 0rem;
+    margin: 0.813rem 1.063rem;
 
-    .logo__back__none {
-        display: none;
+    .logo__back__link {
+        margin-right: auto;
+
+        .logo__back__none {
+            display: none;
+        }
+
+        .logo__back {
+            display: flex;
+            width: 1.875rem;
+            height: 1.875rem;
+        }
     }
 
     .logo__title {
         width: 10.125rem;
+        text-align: center;
+        margin-right: auto;
+        margin-left: -1.688rem;
+    }
+}
+
+@media (min-width:1428px) {
+    .logo {
+        margin: 1.875rem 1.063rem;
     }
 }
