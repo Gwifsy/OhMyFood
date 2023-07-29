@@ -6,6 +6,12 @@
     align-items: center;
     background: #fff;
     padding: 0.813rem 1.063rem;
+    transform: scale(0);
+    animation-name: header-animation-scale;
+    animation-duration: 2s;
+    animation-timing-function: cubic-bezier(0.38, 0.1, 0.67, 0.99);
+    animation-fill-mode: both;
+    animation-delay: 333.3333333333ms;
 
     .logo__back__link {
         margin-right: auto;
@@ -26,6 +32,16 @@
         text-align: center;
         margin-right: auto;
         // margin-left: -1.688rem;
+    }
+
+    @keyframes header-animation-scale {
+        0% {
+            transform: scale(0);
+        }
+
+        100% {
+            transform: scale(1);
+        }
     }
 }
 
