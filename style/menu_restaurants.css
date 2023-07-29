@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   margin: 0;
 }
@@ -24,7 +23,7 @@ body {
   gap: 20px;
   z-index: 2;
   pointer-events: none;
-  animation: background 5s ease-in-out forwards;
+  animation: background 2s ease-in-out forwards;
 }
 .main-page .loader {
   position: fixed;
@@ -198,6 +197,12 @@ body {
   align-items: center;
   background: #F6F6F6;
   padding: 3.375rem 1.125rem 3rem 1.063rem;
+  transform: scale(0);
+  animation-name: animation-restaurants-scale;
+  animation-duration: 2s;
+  animation-timing-function: cubic-bezier(0.38, 0.1, 0.67, 0.99);
+  animation-fill-mode: both;
+  animation-delay: 333.3333333333ms;
 }
 .restaurants .restaurants__title {
   font-size: 1.5rem;
@@ -213,6 +218,12 @@ body {
   gap: 1.125rem;
   width: 100%;
   margin-bottom: 1.125rem;
+  transform: scale(0);
+  animation-name: animation-restaurants-scale;
+  animation-duration: 2s;
+  animation-timing-function: cubic-bezier(0.38, 0.1, 0.67, 0.99);
+  animation-fill-mode: both;
+  animation-delay: 333.3333333333ms;
 }
 .restaurants .restaurants__container__article .a__text__decoration__none {
   background: #fff;
@@ -260,6 +271,12 @@ body {
   height: 1.25rem;
   margin-bottom: 0.313rem;
   margin-top: 1.125rem;
+  transform: translateX(100%);
+  animation-name: restaurants-slide-left;
+  animation-duration: 2.5s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
+  animation-delay: 333.3333333333ms;
 }
 .restaurants .restaurants__container__article .a__text__decoration__none .restaurants__card__paragraphe {
   font-size: 1.063rem;
@@ -268,6 +285,12 @@ body {
   color: #000;
   width: 14.313rem;
   height: 1.5rem;
+  transform: translateX(100%);
+  animation-name: restaurants-slide-left;
+  animation-duration: 2.5s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
+  animation-delay: 333.3333333333ms;
 }
 .restaurants .restaurants__container__article .a__text__decoration__none .restaurants__button {
   display: flex;
@@ -277,7 +300,6 @@ body {
   position: absolute;
   right: 1.125rem;
   bottom: 2.063rem;
-  /* Utilisez l'animation lorsqu'il est coché */
 }
 .restaurants .restaurants__container__article .a__text__decoration__none .restaurants__button .like-checkbox {
   display: none;
@@ -314,6 +336,22 @@ body {
 }
 .restaurants .restaurants__container__article .a__text__decoration__none .restaurants__button .like-checkbox:not(:checked) + .button-like {
   animation: resetAnimation 2s forwards;
+}
+@keyframes animation-restaurants-scale {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes restaurants-slide-left {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
 }
 @media (min-width: 1428px) {
   .restaurants {
