@@ -4,12 +4,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 3rem 1.25rem 4.25rem 2.032rem;
 
     .fonctionnement__title {
         display: flex;
         font-size: $--title-font-size;
-        width: 90%;
-        margin-top: 3rem;
+        width: 100%;
         font-weight: $--title-font-weight;
     }
 
@@ -18,8 +18,7 @@
         flex-direction: column;
         gap: 1.563rem;
         margin-top: 1.625rem;
-        margin-bottom: 4.25rem;
-        width: 90%;
+        width: 100%;
 
         .fonctionnement__article {
             display: flex;
@@ -73,16 +72,20 @@
             }
         }
     }
+}
 
-    @media (min-width:1428px) {
+@media (min-width:1428px) {
+    .fonctionnement {
+        padding: 3.125rem 11.25rem;
+
         .fonctionnement__title {
-            width: 80%;
+            width: 100%;
         }
 
         .fonctionnement__container__article {
             display: flex;
             flex-direction: row;
-            width: 80%;
+            width: 100%;
             gap: 2.25rem;
         }
     }

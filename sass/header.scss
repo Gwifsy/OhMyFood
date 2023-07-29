@@ -5,7 +5,7 @@
     justify-content: center;
     align-items: center;
     background: #fff;
-    margin: 0.813rem 1.063rem;
+    padding: 0.813rem 1.063rem;
 
     .logo__back__link {
         margin-right: auto;
@@ -25,12 +25,17 @@
         width: 10.125rem;
         text-align: center;
         margin-right: auto;
-        margin-left: -1.688rem;
+        // margin-left: -1.688rem;
     }
 }
 
 @media (min-width:1428px) {
     .logo {
-        margin: 1.875rem 1.063rem;
+        padding: 1.875rem 0.188rem 1.987rem 1.063rem;
+
+        .logo__title {
+            width: 12.5rem;
+            height: 2.138rem;
+        }
     }
 }

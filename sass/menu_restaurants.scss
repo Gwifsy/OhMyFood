@@ -5,13 +5,13 @@
     flex-direction: column;
     align-items: center;
     background: $--background-header-menu;
-    height: 79.875rem;
+    padding: 3.375rem 1.125rem 3rem 1.063rem;
+    // height: 79.875rem;
 
     .restaurants__title {
         font-size: $--title-font-size;
         font-weight: $--title-font-weight;
-        width: 90%;
-        margin-top: 3.375rem;
+        width: 100%;
         margin-bottom: 1.625rem;
     }
 
@@ -28,7 +28,7 @@
             background: #fff;
             border-radius: 0.938rem;
             text-decoration: none;
-            width: 90%;
+            width: 100%;
             box-shadow: $--box-shadow-card ;
             padding-bottom: 0.75rem;
             position: relative;
@@ -109,10 +109,36 @@
                     background-size: contain;
                     background-repeat: no-repeat;
                     background-position: center;
+
                 }
 
+                @keyframes fillAnimation {
+                    0% {
+                        background-image: url('/images/icon/like.svg');
+                    }
+
+                    100% {
+                        background-image: url('/images/icon/Like-second.svg');
+                    }
+                }
+
+                /* Utilisez l'animation lorsqu'il est coché */
                 .like-checkbox:checked+.button-like {
-                    background-image: url('/images/icon/Like-second.svg');
+                    animation: fillAnimation 2s forwards;
+                }
+
+                @keyframes resetAnimation {
+                    0% {
+                        background-image: url('/images/icon/Like-second.svg');
+                    }
+
+                    100% {
+                        background-image: url('/images/icon/like.svg');
+                    }
+                }
+
+                .like-checkbox:not(:checked)+.button-like {
+                    animation: resetAnimation 2s forwards;
                 }
             }
         }
@@ -120,19 +146,17 @@
 
 
     @media (min-width:1428px) {
-        height: 43.188rem;
+        padding: 1.875rem 11.25rem;
 
         .restaurants__title {
-            width: 80%;
-            margin-top: 1.875rem;
+            width: 100%;
         }
 
         .restaurants__container__article {
             display: flex;
             flex-direction: row;
-            width: 80%;
+            width: 100%;
             gap: 6.25rem;
-            margin-bottom: 3.125rem;
         }
     }
 }
