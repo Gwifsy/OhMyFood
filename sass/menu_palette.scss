@@ -203,11 +203,6 @@
                 transition-duration: 1500ms;
             }
 
-            .fa-check-circle:before,
-            .fa-circle-check:before {
-                content: "\f058";
-            }
-
             @keyframes menu_list {
                 0% {
                     transform: scale(0);
@@ -221,12 +216,10 @@
             @keyframes slideFromLeft {
                 from {
                     transform: translateX(20%);
-                    /* Début de l'animation, l'élément est complètement décalé vers la gauche */
                 }
 
                 to {
                     transform: translateX(0);
-                    /* Fin de l'animation, l'élément revient à sa position d'origine (0) */
                 }
             }
         }
