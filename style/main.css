@@ -23,7 +23,7 @@ body {
   gap: 20px;
   z-index: 2;
   pointer-events: none;
-  animation: background 5s ease-in-out forwards;
+  animation: background 2s ease-in-out forwards;
 }
 .main-page .loader {
   position: fixed;
@@ -197,6 +197,12 @@ body {
   background: #EAEAEA;
   padding: 0.813rem;
   gap: 1.063rem;
+  transform: scale(0);
+  animation-name: header-animation-scale;
+  animation-duration: 2s;
+  animation-timing-function: cubic-bezier(0.38, 0.1, 0.67, 0.99);
+  animation-fill-mode: both;
+  animation-delay: 333.3333333333ms;
 }
 .paris__belleville .paris__belleville__pin {
   width: 0.75rem;
@@ -214,12 +220,24 @@ body {
   background: #F6F6F6;
   padding-top: 2.438rem;
   padding-bottom: 3.563rem;
+  transform: scale(0);
+  animation-name: header-animation-scale;
+  animation-duration: 2s;
+  animation-timing-function: cubic-bezier(0.38, 0.1, 0.67, 0.99);
+  animation-fill-mode: both;
+  animation-delay: 333.3333333333ms;
 }
 .reservez .reservez__text {
   font-size: 1.5rem;
   font-weight: 700;
   width: 17.188rem;
   height: 4.25rem;
+  transform: translateX(100%);
+  animation-name: main-slideleft;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
+  animation-delay: 333.3333333333ms;
 }
 .reservez .reservez__paragraphe {
   display: flex;
@@ -227,6 +245,12 @@ body {
   font-weight: 300;
   width: 19.688rem;
   margin-left: 1rem;
+  transform: translateX(100%);
+  animation-name: main-slideleft;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
+  animation-delay: 333.3333333333ms;
 }
 .reservez .reservez__button {
   display: flex;
@@ -242,11 +266,33 @@ body {
   margin-top: 1.688rem;
   transition-duration: 1.2s;
   opacity: 1;
+  transform: scale(0);
+  animation-name: header-animation-scale;
+  animation-duration: 2s;
+  animation-timing-function: cubic-bezier(0.38, 0.1, 0.67, 0.99);
+  animation-fill-mode: both;
+  animation-delay: 333.3333333333ms;
 }
 .reservez .reservez__button .reservez__button__title {
   font-size: 1rem;
   color: #FFFFFF;
   font-weight: 500;
+}
+@keyframes main-animation-scale {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes main-slideleft {
+  from {
+    transform: translateX(20%);
+  }
+  to {
+    transform: translateX(0);
+  }
 }
 
 .reservez__button:hover {
@@ -278,6 +324,12 @@ body {
   display: flex;
   height: 17.188rem;
   position: relative;
+  transform: scale(0);
+  animation-name: header-animation-scale;
+  animation-duration: 2s;
+  animation-timing-function: cubic-bezier(0.38, 0.1, 0.67, 0.99);
+  animation-fill-mode: both;
+  animation-delay: 333.3333333333ms;
 }
 .palette__main .palette__image {
   width: 100%;

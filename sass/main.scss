@@ -7,6 +7,12 @@
     background: $--background-paris-belleville;
     padding: 0.813rem;
     gap: 1.063rem;
+    transform: scale(0);
+    animation-name: header-animation-scale;
+    animation-duration: 2s;
+    animation-timing-function: cubic-bezier(0.38, 0.1, 0.67, 0.99);
+    animation-fill-mode: both;
+    animation-delay: 333.3333333333ms;
 
     .paris__belleville__pin {
         width: 0.75rem;
@@ -27,12 +33,24 @@
     background: $--background-header-menu;
     padding-top: 2.438rem;
     padding-bottom: 3.563rem;
+    transform: scale(0);
+    animation-name: header-animation-scale;
+    animation-duration: 2s;
+    animation-timing-function: cubic-bezier(0.38, 0.1, 0.67, 0.99);
+    animation-fill-mode: both;
+    animation-delay: 333.3333333333ms;
 
     .reservez__text {
         font-size: $--title-font-size;
         font-weight: 700;
         width: 17.188rem;
         height: 4.25rem;
+        transform: translateX(100%);
+        animation-name: main-slideleft;
+        animation-duration: 2s;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: both;
+        animation-delay: 333.3333333333ms;
     }
 
     .reservez__paragraphe {
@@ -41,6 +59,12 @@
         font-weight: $--paragraphe-font-weight;
         width: 19.688rem;
         margin-left: 1rem;
+        transform: translateX(100%);
+        animation-name: main-slideleft;
+        animation-duration: 2s;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: both;
+        animation-delay: 333.3333333333ms;
     }
 
     .reservez__button {
@@ -57,11 +81,38 @@
         margin-top: 1.688rem;
         transition-duration: 1.2s;
         opacity: 1;
+        transform: scale(0);
+        animation-name: header-animation-scale;
+        animation-duration: 2s;
+        animation-timing-function: cubic-bezier(0.38, 0.1, 0.67, 0.99);
+        animation-fill-mode: both;
+        animation-delay: 333.3333333333ms;
+
 
         .reservez__button__title {
             font-size: 1rem;
             color: #FFFFFF;
             font-weight: $--text-font-weight;
+        }
+    }
+
+    @keyframes main-animation-scale {
+        0% {
+            transform: scale(0);
+        }
+
+        100% {
+            transform: scale(1);
+        }
+    }
+
+    @keyframes main-slideleft {
+        from {
+            transform: translateX(20%);
+        }
+
+        to {
+            transform: translateX(0);
         }
     }
 }
@@ -100,6 +151,13 @@
     display: flex;
     height: 17.188rem;
     position: relative;
+    transform: scale(0);
+    animation-name: header-animation-scale;
+    animation-duration: 2s;
+    animation-timing-function: cubic-bezier(0.38, 0.1, 0.67, 0.99);
+    animation-fill-mode: both;
+    animation-delay: 333.3333333333ms;
+
 
     .palette__image {
         width: 100%;
