@@ -1,17 +1,11 @@
 @import"style.scss";
 
 .logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include display-center-row;
     background: #fff;
     padding: 0.813rem 1.063rem;
-    transform: scale(0);
     animation-name: header-animation-scale;
-    animation-duration: 2s;
-    animation-timing-function: cubic-bezier(0.38, 0.1, 0.67, 0.99);
-    animation-fill-mode: both;
-    animation-delay: 333.3333333333ms;
+    @include animation-scale;
 
     .logo__back__link {
         margin-right: auto;
@@ -21,7 +15,7 @@
         }
 
         .logo__back {
-            display: flex;
+            @include display-center-row;
             width: 1.875rem;
             height: 1.875rem;
         }

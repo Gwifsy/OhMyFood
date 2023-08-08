@@ -2,17 +2,12 @@
 
 // Paris,BelleVille
 .paris__belleville {
-    display: flex;
-    justify-content: center;
+    @include display-center-row;
     background: $--background-paris-belleville;
     padding: 0.813rem;
     gap: 1.063rem;
-    transform: scale(0);
     animation-name: header-animation-scale;
-    animation-duration: 2s;
-    animation-timing-function: cubic-bezier(0.38, 0.1, 0.67, 0.99);
-    animation-fill-mode: both;
-    animation-delay: 333.3333333333ms;
+    @include animation-scale;
 
     .paris__belleville__pin {
         width: 0.75rem;
@@ -26,51 +21,35 @@
 
 // Réservez le menu qui vous convient
 .reservez {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include display-center-column;
     text-align: center;
     background: $--background-header-menu;
     padding-top: 2.438rem;
     padding-bottom: 3.563rem;
-    transform: scale(0);
     animation-name: header-animation-scale;
-    animation-duration: 2s;
-    animation-timing-function: cubic-bezier(0.38, 0.1, 0.67, 0.99);
-    animation-fill-mode: both;
-    animation-delay: 333.3333333333ms;
+    @include animation-scale;
 
     .reservez__text {
         font-size: $--title-font-size;
         font-weight: 700;
         width: 17.188rem;
         height: 4.25rem;
-        transform: translateX(100%);
         animation-name: main-slideleft;
-        animation-duration: 2s;
-        animation-timing-function: ease-in-out;
-        animation-fill-mode: both;
-        animation-delay: 333.3333333333ms;
+        @include animation-translateX;
     }
 
     .reservez__paragraphe {
-        display: flex;
+        @include display-center-row;
         font-size: $--text-paragraphe-header-and-title-menu-font-size;
         font-weight: $--paragraphe-font-weight;
         width: 19.688rem;
         margin-left: 1rem;
-        transform: translateX(100%);
         animation-name: main-slideleft;
-        animation-duration: 2s;
-        animation-timing-function: ease-in-out;
-        animation-fill-mode: both;
-        animation-delay: 333.3333333333ms;
+        @include animation-translateX;
     }
 
     .reservez__button {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+        @include display-center-column;
         background: $--btn-gradiant;
         width: 13.625rem;
         height: 3.125rem;
@@ -79,15 +58,10 @@
         text-decoration: none;
         margin-left: 0.438rem;
         margin-top: 1.688rem;
-        transition-duration: 1.2s;
         opacity: 1;
-        transform: scale(0);
+        transition-duration: 500ms;
         animation-name: header-animation-scale;
-        animation-duration: 2s;
-        animation-timing-function: cubic-bezier(0.38, 0.1, 0.67, 0.99);
-        animation-fill-mode: both;
-        animation-delay: 333.3333333333ms;
-
+        @include animation-scale;
 
         .reservez__button__title {
             font-size: 1rem;
@@ -118,7 +92,7 @@
 }
 
 .reservez__button:hover {
-    transition-duration: 1.2s;
+    transition-duration: 500ms;
     opacity: 0.8;
     box-shadow: 0rem 0.375rem 0.75rem 0rem rgba(0, 0, 0, 0.45);
 }
@@ -135,8 +109,7 @@
         }
 
         .reservez__paragraphe {
-            justify-content: center;
-            align-items: center;
+            @include display-center-row;
             font-size: $--text-paragraphe-header-and-title-menu-font-size;
             width: 32.875rem;
             height: 2.938rem;
@@ -145,19 +118,13 @@
     }
 }
 
-
 // MENU PALETTE MAIN
 .palette__main {
     display: flex;
     height: 17.188rem;
     position: relative;
-    transform: scale(0);
     animation-name: header-animation-scale;
-    animation-duration: 2s;
-    animation-timing-function: cubic-bezier(0.38, 0.1, 0.67, 0.99);
-    animation-fill-mode: both;
-    animation-delay: 333.3333333333ms;
-
+    @include animation-translateX;
 
     .palette__image {
         width: 100%;

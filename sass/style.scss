@@ -25,7 +25,6 @@ $--btn-gradiant: linear-gradient(175deg, #9356DC 0%, #FF79DA 100%);
 $--box-shadow-gradiant: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
 $--box-shadow-card: 0px 4px 15px 0px rgba(0, 0, 0, 0.10);
 
-
 // Text configuration
 $--body-font: 'Roboto', sans-serif;
 $--palette-title: 'Shrikhand', cursive;
@@ -47,8 +46,43 @@ $--title-palette-font-size: 1.75rem;
 $--paragraphe-palette-font-size: 0.94rem;
 
 // MIXINS
+@mixin display-center-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
+@mixin display-center-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
 
+@mixin hidden-ellipsis-nowrap {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@mixin animation-scale {
+    transform: scale(0);
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(0.38, 0.1, 0.67, 0.99);
+    animation-fill-mode: both;
+    animation-delay: 333.3333333333ms;
+}
+
+@mixin animation-translateX {
+    transform: translateX(100%);
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both;
+    animation-delay: 333.3333333333ms;
+}
+
+// STYLE
 * {
     margin: 0;
     // border: 1px solid blueviolet;
@@ -56,16 +90,11 @@ $--paragraphe-palette-font-size: 0.94rem;
 
 body {
     font-family: $--body-font;
-}
-
-body {
     margin: 0;
 }
 
 .main-page {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include display-center-column;
     background: linear-gradient(175deg, #000000 100%, #fcfcfc 100%);
     box-shadow: $--btn-gradiant ;
     height: 100%;
@@ -75,14 +104,14 @@ body {
     gap: 20px;
     z-index: 2;
     pointer-events: none;
-    animation: background 2s ease-in-out forwards;
+    animation: background 1s ease-in-out forwards;
 
     .loader {
         position: fixed;
         margin-bottom: 200px;
         width: 100px;
         height: 100px;
-        animation: blur 5s ease-in-out forwards;
+        animation: blur 2.5s ease-in-out forwards;
 
         .spin-blend {
             transform: rotateZ(90deg);
@@ -126,7 +155,7 @@ body {
                 height: inherit;
                 border-radius: 50%;
                 transform: rotateX(70deg);
-                animation: 2s spin linear infinite;
+                animation: 1s spin linear infinite;
             }
 
             &:after {
@@ -137,7 +166,7 @@ body {
     }
 
     .loading-text {
-        animation: blur 5s ease-in-out forwards;
+        animation: blur 2.5s ease-in-out forwards;
         position: fixed;
         color: $--ellispe-purple;
         font-family: $--palette-title ;
@@ -147,7 +176,7 @@ body {
         gap: 2px;
 
         .letter {
-            animation: 2s bounce infinite;
+            animation: 1s bounce infinite;
             transform: rotate(6deg);
 
             &:nth-child(2) {

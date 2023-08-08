@@ -8,23 +8,15 @@
     background: $--title-belleville-font;
     padding: 1.563rem 1.375rem;
     gap: 0.75rem;
-    transform: scale(0);
     animation-name: footer-animation;
-    animation-duration: 1s;
-    animation-timing-function: cubic-bezier(0.38, 0.1, 0.67, 0.99);
-    animation-fill-mode: both;
-    animation-delay: 333.3333333333ms;
+    @include animation-scale;
 
     .footer__content {
         display: flex;
         flex-direction: column;
         gap: 0.438rem;
-        transform: translateX(100%);
         animation-name: footer-slideleft;
-        animation-duration: 2s;
-        animation-timing-function: ease-in-out;
-        animation-fill-mode: both;
-        animation-delay: 333.3333333333ms;
+        @include animation-translateX;
 
         .footer__icon__flex {
             display: flex;
@@ -74,13 +66,8 @@
     .logo__footer {
         display: flex;
         width: 6.536rem;
-        transform: translateX(100%);
         animation-name: footer-slideleft;
-        animation-duration: 1.5s;
-        animation-timing-function: ease-in-out;
-        animation-fill-mode: both;
-        animation-delay: 333.3333333333ms;
-
+        @include animation-translateX;
 
         .logo__footer__title {
             width: 100%;

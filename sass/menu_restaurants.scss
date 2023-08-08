@@ -1,17 +1,11 @@
 @import "style.scss";
 
 .restaurants {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include display-center-column;
     background: $--background-header-menu;
     padding: 3.375rem 1.125rem 3rem 1.063rem;
-    transform: scale(0);
     animation-name: animation-restaurants-scale;
-    animation-duration: 2s;
-    animation-timing-function: cubic-bezier(0.38, 0.1, 0.67, 0.99);
-    animation-fill-mode: both;
-    animation-delay: 333.3333333333ms;
+    @include animation-scale;
 
     .restaurants__title {
         font-size: $--title-font-size;
@@ -21,19 +15,12 @@
     }
 
     .restaurants__container__article {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        @include display-center-column;
         gap: 1.125rem;
         width: 100%;
         margin-bottom: 1.125rem;
-        transform: scale(0);
         animation-name: animation-restaurants-scale;
-        animation-duration: 2s;
-        animation-timing-function: cubic-bezier(0.38, 0.1, 0.67, 0.99);
-        animation-fill-mode: both;
-        animation-delay: 333.3333333333ms;
+        @include animation-scale;
 
         .a__text__decoration__none {
             background: #fff;
@@ -43,7 +30,6 @@
             box-shadow: $--box-shadow-card ;
             padding-bottom: 0.75rem;
             position: relative;
-
 
             .restaurants__image__badge {
                 position: relative;
@@ -62,9 +48,7 @@
                 }
 
                 .restaurants_badge {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
+                    @include display-center-column;
                     width: 5rem;
                     height: 1.813rem;
                     background: $--bdg-border-Green;
@@ -86,12 +70,8 @@
                 height: 1.25rem;
                 margin-bottom: 0.313rem;
                 margin-top: 1.125rem;
-                transform: translateX(100%);
                 animation-name: restaurants-slide-left;
-                animation-duration: 2.5s;
-                animation-timing-function: ease-in-out;
-                animation-fill-mode: both;
-                animation-delay: 333.3333333333ms;
+                @include animation-translateX;
             }
 
             .restaurants__card__paragraphe {
@@ -101,17 +81,12 @@
                 color: #000;
                 width: 14.313rem;
                 height: 1.5rem;
-                transform: translateX(100%);
                 animation-name: restaurants-slide-left;
-                animation-duration: 2.5s;
-                animation-timing-function: ease-in-out;
-                animation-fill-mode: both;
-                animation-delay: 333.3333333333ms;
+                @include animation-translateX;
             }
 
             .restaurants__button {
-                display: flex;
-                align-items: center;
+                @include display-center-column;
                 width: 1.375rem;
                 height: 1.375rem;
                 position: absolute;
@@ -123,7 +98,7 @@
                 }
 
                 .button-like {
-                    display: flex;
+                    @include display-center-row;
                     width: 1.375rem;
                     height: 1.375rem;
                     border: none;
@@ -145,7 +120,7 @@
                 }
 
                 .like-checkbox:checked+.button-like {
-                    animation: fillAnimation 2s forwards;
+                    animation: fillAnimation 300ms forwards;
                 }
 
                 @keyframes resetAnimation {
@@ -159,7 +134,7 @@
                 }
 
                 .like-checkbox:not(:checked)+.button-like {
-                    animation: resetAnimation 2s forwards;
+                    animation: resetAnimation 300ms forwards;
                 }
             }
 
@@ -185,7 +160,6 @@
         }
     }
 
-
     @media (min-width:1428px) {
         padding: 1.875rem 11.25rem;
 
@@ -194,8 +168,7 @@
         }
 
         .restaurants__container__article {
-            display: flex;
-            flex-direction: row;
+            @include display-center-row;
             width: 100%;
             gap: 6.25rem;
         }

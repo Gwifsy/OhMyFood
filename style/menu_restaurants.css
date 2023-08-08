@@ -4,16 +4,14 @@
 
 body {
   font-family: "Roboto", sans-serif;
-}
-
-body {
   margin: 0;
 }
 
 .main-page {
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   background: linear-gradient(175deg, #000000 100%, #fcfcfc 100%);
   box-shadow: linear-gradient(175deg, #9356DC 0%, #FF79DA 100%);
   height: 100%;
@@ -23,14 +21,14 @@ body {
   gap: 20px;
   z-index: 2;
   pointer-events: none;
-  animation: background 2s ease-in-out forwards;
+  animation: background 1s ease-in-out forwards;
 }
 .main-page .loader {
   position: fixed;
   margin-bottom: 200px;
   width: 100px;
   height: 100px;
-  animation: blur 5s ease-in-out forwards;
+  animation: blur 2.5s ease-in-out forwards;
 }
 .main-page .loader .spin-blend {
   transform: rotateZ(90deg);
@@ -68,14 +66,14 @@ body {
   height: inherit;
   border-radius: 50%;
   transform: rotateX(70deg);
-  animation: 2s spin linear infinite;
+  animation: 1s spin linear infinite;
 }
 .main-page .loader .spin-blend:after {
   transform: rotateY(70deg);
   animation-delay: 0.4s;
 }
 .main-page .loading-text {
-  animation: blur 5s ease-in-out forwards;
+  animation: blur 2.5s ease-in-out forwards;
   position: fixed;
   color: #9356DC;
   font-family: "Shrikhand", cursive;
@@ -85,7 +83,7 @@ body {
   gap: 2px;
 }
 .main-page .loading-text .letter {
-  animation: 2s bounce infinite;
+  animation: 1s bounce infinite;
   transform: rotate(6deg);
 }
 .main-page .loading-text .letter:nth-child(2) {
@@ -194,12 +192,13 @@ body {
 .restaurants {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   background: #F6F6F6;
   padding: 3.375rem 1.125rem 3rem 1.063rem;
-  transform: scale(0);
   animation-name: animation-restaurants-scale;
-  animation-duration: 2s;
+  transform: scale(0);
+  animation-duration: 1s;
   animation-timing-function: cubic-bezier(0.38, 0.1, 0.67, 0.99);
   animation-fill-mode: both;
   animation-delay: 333.3333333333ms;
@@ -218,9 +217,9 @@ body {
   gap: 1.125rem;
   width: 100%;
   margin-bottom: 1.125rem;
-  transform: scale(0);
   animation-name: animation-restaurants-scale;
-  animation-duration: 2s;
+  transform: scale(0);
+  animation-duration: 1s;
   animation-timing-function: cubic-bezier(0.38, 0.1, 0.67, 0.99);
   animation-fill-mode: both;
   animation-delay: 333.3333333333ms;
@@ -250,6 +249,7 @@ body {
 }
 .restaurants .restaurants__container__article .a__text__decoration__none .restaurants__image__badge .restaurants_badge {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 5rem;
@@ -271,9 +271,9 @@ body {
   height: 1.25rem;
   margin-bottom: 0.313rem;
   margin-top: 1.125rem;
-  transform: translateX(100%);
   animation-name: restaurants-slide-left;
-  animation-duration: 2.5s;
+  transform: translateX(100%);
+  animation-duration: 1s;
   animation-timing-function: ease-in-out;
   animation-fill-mode: both;
   animation-delay: 333.3333333333ms;
@@ -285,15 +285,17 @@ body {
   color: #000;
   width: 14.313rem;
   height: 1.5rem;
-  transform: translateX(100%);
   animation-name: restaurants-slide-left;
-  animation-duration: 2.5s;
+  transform: translateX(100%);
+  animation-duration: 1s;
   animation-timing-function: ease-in-out;
   animation-fill-mode: both;
   animation-delay: 333.3333333333ms;
 }
 .restaurants .restaurants__container__article .a__text__decoration__none .restaurants__button {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   width: 1.375rem;
   height: 1.375rem;
@@ -306,6 +308,9 @@ body {
 }
 .restaurants .restaurants__container__article .a__text__decoration__none .restaurants__button .button-like {
   display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   width: 1.375rem;
   height: 1.375rem;
   border: none;
@@ -324,7 +329,7 @@ body {
   }
 }
 .restaurants .restaurants__container__article .a__text__decoration__none .restaurants__button .like-checkbox:checked + .button-like {
-  animation: fillAnimation 2s forwards;
+  animation: fillAnimation 300ms forwards;
 }
 @keyframes resetAnimation {
   0% {
@@ -335,7 +340,7 @@ body {
   }
 }
 .restaurants .restaurants__container__article .a__text__decoration__none .restaurants__button .like-checkbox:not(:checked) + .button-like {
-  animation: resetAnimation 2s forwards;
+  animation: resetAnimation 300ms forwards;
 }
 @keyframes animation-restaurants-scale {
   0% {
@@ -363,6 +368,8 @@ body {
   .restaurants .restaurants__container__article {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     gap: 6.25rem;
   }

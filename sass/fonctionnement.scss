@@ -1,16 +1,10 @@
 @import 'style.scss';
 
 .fonctionnement {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include display-center-column;
     padding: 3rem 1.25rem 4.25rem 2.032rem;
-    transform: scale(0);
     animation-name: fonctionnement-animation-scale;
-    animation-duration: 2s;
-    animation-timing-function: cubic-bezier(0.38, 0.1, 0.67, 0.99);
-    animation-fill-mode: both;
-    animation-delay: 333.3333333333ms;
+    @include animation-scale;
 
     .fonctionnement__title {
         display: flex;
@@ -20,8 +14,7 @@
     }
 
     .fonctionnement__container__article {
-        display: flex;
-        flex-direction: column;
+        @include display-center-column;
         gap: 1.563rem;
         margin-top: 1.625rem;
         width: 100%;
@@ -36,9 +29,7 @@
             box-shadow: $--box-shadow-gradiant;
 
             .fonctionnement__ellipse {
-                display: flex;
-                justify-content: center;
-                align-items: center;
+                @include display-center-column;
                 width: 1.5rem;
                 height: 1.5rem;
                 background: $--ellispe-purple;
@@ -99,8 +90,7 @@
         }
 
         .fonctionnement__container__article {
-            display: flex;
-            flex-direction: row;
+            @include display-center-row;
             width: 100%;
             gap: 2.25rem;
         }
