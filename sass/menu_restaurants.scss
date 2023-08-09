@@ -103,7 +103,6 @@
                     height: 1.375rem;
                     border: none;
                     cursor: pointer;
-                    background-image: url('/images/icon/like.svg');
                     background-size: contain;
                     background-repeat: no-repeat;
                     background-position: center;
@@ -111,11 +110,11 @@
 
                 @keyframes fillAnimation {
                     0% {
-                        background-image: url('/images/icon/like.svg');
+                        background-image: url('../images/icon/like.svg');
                     }
 
                     100% {
-                        background-image: url('/images/icon/Like-second.svg');
+                        background-image: url('../images/icon/Like-second.svg');
                     }
                 }
 
@@ -125,11 +124,11 @@
 
                 @keyframes resetAnimation {
                     0% {
-                        background-image: url('/images/icon/Like-second.svg');
+                        background-image: url('../images/icon/Like-second.svg');
                     }
 
                     100% {
-                        background-image: url('/images/icon/like.svg');
+                        background-image: url('../images/icon/like.svg');
                     }
                 }
 

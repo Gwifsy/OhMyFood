@@ -598,10 +598,10 @@ body {
 }
 @keyframes fillAnimation {
   0% {
-    background-image: url("/images/icon/like.svg");
+    background-image: url("../images/icon/like.svg");
   }
   100% {
-    background-image: url("/images/icon/Like-second.svg");
+    background-image: url("../images/icon/Like-second.svg");
   }
 }
 .palette__menu .palette__title__btn .palette__button .like-checkbox:checked + .palette__button__like {
@@ -609,10 +609,10 @@ body {
 }
 @keyframes resetAnimation {
   0% {
-    background-image: url("/images/icon/Like-second.svg");
+    background-image: url("../images/icon/Like-second.svg");
   }
   100% {
-    background-image: url("/images/icon/like.svg");
+    background-image: url("../images/icon/like.svg");
   }
 }
 .palette__menu .palette__title__btn .palette__button .like-checkbox:not(:checked) + .palette__button__like {

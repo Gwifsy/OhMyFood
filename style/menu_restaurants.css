@@ -315,17 +315,16 @@ body {
   height: 1.375rem;
   border: none;
   cursor: pointer;
-  background-image: url("/images/icon/like.svg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
 @keyframes fillAnimation {
   0% {
-    background-image: url("/images/icon/like.svg");
+    background-image: url("../images/icon/like.svg");
   }
   100% {
-    background-image: url("/images/icon/Like-second.svg");
+    background-image: url("../images/icon/Like-second.svg");
   }
 }
 .restaurants .restaurants__container__article .a__text__decoration__none .restaurants__button .like-checkbox:checked + .button-like {
@@ -333,10 +332,10 @@ body {
 }
 @keyframes resetAnimation {
   0% {
-    background-image: url("/images/icon/Like-second.svg");
+    background-image: url("../images/icon/Like-second.svg");
   }
   100% {
-    background-image: url("/images/icon/like.svg");
+    background-image: url("../images/icon/like.svg");
   }
 }
 .restaurants .restaurants__container__article .a__text__decoration__none .restaurants__button .like-checkbox:not(:checked) + .button-like {
